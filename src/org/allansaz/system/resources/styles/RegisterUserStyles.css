@@ -1,0 +1,23 @@
+.form-register {
+    -fx-background-color: #BA8E23;
+}
+
+.form-register Label{
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+}
+
+.form-register TextField,
+.form-register PasswordField{
+    -fx-border-color: #BA8E23;
+    -fx-background-color: white;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-text-fill: #BA8E23;
+}
+
+.Vbox {
+    -fx-background-color: #363636;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 5px;
+}

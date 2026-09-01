@@ -1,0 +1,65 @@
+.etiqueta {
+    -fx-font-size: 15px;
+    -fx-text-fill: white;
+}
+
+.campo {
+    -fx-border-color: #BA8E23;
+    -fx-text-fill: #BA8E23;
+    -fx-background-color: white;
+    -fx-font-size: 12.5px;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-max-width: 215px;  
+ }
+
+.vboxPadre {
+    -fx-background-color: #BA8E23;
+    -fx-border-color: #BA8E23;
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
+    -fx-padding: 8px;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 5px;
+}
+
+.vbox {
+    -fx-background-color: #363636;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 5px;
+}
+
+.link {
+    -fx-text-fill: #BA8E23;
+    -fx-font-size: 15px;
+    -fx-font-family: "Cactus";
+}
+
+.link:hover {
+    -fx-text-fill: white;
+}
+
+.link:pressed {
+    -fx-text-fill: #ffff88;
+}
+
+#btn-login {
+    -fx-text-fill: #BA8E23;
+    -fx-font-size: 15px;
+
+
+}
+
+#btn-login:hover {
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+
+
+}
+
+#btn-login:pressed {
+    -fx-text-fill: #ffff88;
+    -fx-font-size: 15px;
+
+}
+

@@ -1,4 +1,4 @@
-package org.allansaz.system.utils;
+package com.myapp.system.utils;
 
 import javafx.scene.Scene;
 import javafx.stage.Stage;

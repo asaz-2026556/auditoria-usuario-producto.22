@@ -1,9 +1,9 @@
-package org.allansaz.system;
+package com.myapp.system;
 
 import javafx.application.Application;
 import javafx.stage.Stage;
-import org.allansaz.system.utils.SceneManager;
-import org.allansaz.system.utils.ViewFactory;
+import com.myapp.system.utils.SceneManager;
+import com.myapp.system.utils.ViewFactory;
 
 public class ClasePrincipal extends Application {
 

@@ -1,4 +1,4 @@
-package org.allansaz.system.model;
+package com.myapp.system.model;
 
 public class User {
 

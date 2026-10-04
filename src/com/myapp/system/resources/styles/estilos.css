@@ -1,0 +1,61 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 4/10/2026, 12:56:27
+    Author     : Sactic
+*/
+.raiz {
+    -fx-background-color: #363636;
+}
+
+.titulo {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #BA8E23;
+}
+
+.etiqueta {
+    -fx-font-size: 14px;
+    -fx-text-fill: white;
+}
+
+.campo {
+    -fx-background-color: white;
+    -fx-border-color: #BA8E23;
+    -fx-border-width: 2px;
+    -fx-text-fill: #363636;
+}
+
+.boton {
+    -fx-background-color: #BA8E23;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+}
+
+.boton:hover {
+    -fx-background-color: #d6a62d;
+}
+
+.enlace {
+    -fx-text-fill: #BA8E23;
+}
+
+.encabezado {
+    -fx-background-color: #363636;
+}
+
+.menu-lateral {
+    -fx-background-color: #2b2b2b;
+}
+
+.centro {
+    -fx-background-color: #F4F1EA;
+}
+
+.texto-centro {
+    -fx-font-size: 22px;
+    -fx-text-fill: #363636;
+}

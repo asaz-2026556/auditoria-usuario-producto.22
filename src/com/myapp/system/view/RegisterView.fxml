@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="420.0" prefWidth="400.0" spacing="18.0" styleClass="raiz" stylesheets="@estilos.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.myapp.controller.RegistroController">
+   <padding>
+      <Insets bottom="30.0" left="40.0" right="40.0" top="30.0" />
+   </padding>
+   <children>
+      <Label styleClass="titulo" text="Crear Cuenta" />
+      <GridPane hgap="12.0" vgap="14.0">
+         <children>
+            <Label styleClass="etiqueta" text="Nombre" />
+            <Label styleClass="etiqueta" text="Usuario" GridPane.rowIndex="1" />
+            <Label styleClass="etiqueta" text="Contraseña" GridPane.rowIndex="2" />
+            <Label styleClass="etiqueta" text="Email" GridPane.rowIndex="3" />
+            <TextField fx:id="txtNombre" styleClass="campo" GridPane.columnIndex="1" />
+            <TextField fx:id="txtUsuario" styleClass="campo" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <PasswordField fx:id="pwdContrasena" styleClass="campo" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="txtEmail" styleClass="campo" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+      <HBox alignment="CENTER" spacing="15.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#onCancelar" styleClass="boton" text="Cancelar" />
+            <Button defaultButton="true" mnemonicParsing="false" onAction="#onGuardar" styleClass="boton" text="Guardar" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

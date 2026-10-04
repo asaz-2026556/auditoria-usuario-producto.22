@@ -1,4 +1,4 @@
-package org.allansaz.system.utils;
+package com.myapp.system.utils;
 
 import java.io.IOException;
 import java.io.UncheckedIOException;
@@ -6,7 +6,7 @@ import java.net.URL;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.JavaFXBuilderFactory;
 import javafx.scene.Scene;
-import org.allansaz.system.ClasePrincipal;
+import com.myapp.system.ClasePrincipal;
 
 public class ViewFactory {
 

@@ -1,4 +1,4 @@
-package org.allansaz.system.utils;
+package com.myapp.system.utils;
 
 public class Validations {
 

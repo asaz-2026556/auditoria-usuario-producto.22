@@ -1,4 +1,4 @@
-package org.allansaz.system.service;
+package com.myapp.system.service;
 
 public enum UserStatus {
     USER_CREATED,

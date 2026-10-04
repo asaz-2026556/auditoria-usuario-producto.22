@@ -1,7 +1,9 @@
-package org.allansaz.system.service;
+package com.myapp.system.service;
 
-import org.allansaz.system.model.User;
-import org.allansaz.system.repository.UserRepository;
+
+import com.myapp.system.model.User;
+
+import com.myapp.system.repository.UserRepository;
 
 public class UserService {
     private UserRepository userRepo = new UserRepository();

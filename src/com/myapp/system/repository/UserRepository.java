@@ -1,6 +1,6 @@
-package org.allansaz.system.repository;
+package com.myapp.system.repository;
 
-import org.allansaz.system.model.User;
+import com.myapp.system.model.User;
 import java.sql.CallableStatement;
 import org.allansaz.system.config.ConexionDB;
 import java.sql.SQLException;

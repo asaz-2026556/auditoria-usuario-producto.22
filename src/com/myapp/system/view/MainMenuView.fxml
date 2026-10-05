@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane prefHeight="500.0" prefWidth="760.0" stylesheets="@estilos.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.myapp.controller.MainMenuController">
+<BorderPane prefHeight="560.0" prefWidth="900.0" stylesheets="@estilos.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.myapp.system.controller.MainMenuController">
    <top>
       <HBox alignment="CENTER_LEFT" spacing="15.0" styleClass="encabezado">
          <padding>
@@ -30,12 +30,13 @@
             <Button maxWidth="Infinity" mnemonicParsing="false" onAction="#onInicio" styleClass="boton" text="Inicio" />
             <Button maxWidth="Infinity" mnemonicParsing="false" onAction="#onPerfil" styleClass="boton" text="Perfil" />
             <Button maxWidth="Infinity" mnemonicParsing="false" onAction="#onConfiguracion" styleClass="boton" text="Configuración" />
+            <Button maxWidth="Infinity" mnemonicParsing="false" onAction="#onVentas" styleClass="boton" text="Ventas" />
             <Button maxWidth="Infinity" mnemonicParsing="false" onAction="#onCerrarSesion" styleClass="boton" text="Cerrar Sesión" />
          </children>
       </VBox>
    </left>
    <center>
-      <StackPane styleClass="centro">
+      <StackPane fx:id="contenedorCentral" styleClass="centro">
          <children>
             <Label fx:id="lblContenido" styleClass="texto-centro" text="Contenido" />
          </children>

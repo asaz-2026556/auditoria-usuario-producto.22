@@ -1,5 +1,4 @@
 package com.myapp.system.controller;
-
 import com.myapp.main.App;
 import com.myapp.system.model.User;
 import javafx.fxml.FXML;

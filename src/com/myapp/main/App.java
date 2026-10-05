@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.myapp.main;
 
 import java.io.IOException;
@@ -22,10 +18,10 @@ public class App extends Application {
         cambiarVista("LoginView.fxml", "Iniciar Sesión");
     }
 
-    // Cambia la escena del mismo Stage (no abre ventanas nuevas)
+
     public static void cambiarVista(String archivo, String titulo) {
         try {
-            Parent raiz = FXMLLoader.load(App.class.getResource("/com/myapp/view/" + archivo));
+            Parent raiz = FXMLLoader.load(App.class.getResource("/com/myapp/system/view/" + archivo));
             stage.setScene(new Scene(raiz));
             stage.setTitle(titulo);
             stage.sizeToScene();

@@ -8,7 +8,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox alignment="CENTER" prefHeight="420.0" prefWidth="380.0" spacing="12.0" styleClass="raiz" stylesheets="@estilos.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.myapp.controller.LoginController">
+<VBox alignment="CENTER" prefHeight="420.0" prefWidth="380.0" spacing="12.0" styleClass="raiz" stylesheets="@estilos.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.myapp.system.controller.LoginController">
    <padding>
       <Insets bottom="30.0" left="40.0" right="40.0" top="30.0" />
    </padding>

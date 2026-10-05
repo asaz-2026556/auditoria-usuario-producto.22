@@ -1,58 +1,27 @@
-package org.allansaz.system.config;
+package com.myapp.system.config;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
+// Singleton: solo existe una instancia de esta clase
 public class ConexionDB {
 
-    private static ConexionDB instanciaConexionDB;
-    private Connection connection;
+    private static ConexionDB instancia;
 
-    public ConexionDB() {
-        try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            connection = DriverManager.getConnection(
-                    "jdbc: mysql://" + Enviroment.LOCATION_SERVICE + "/" + Enviroment.DATA_BASE ,
-                    Enviroment.USER,
-                    Enviroment.PASSWORD);
-            
-        } catch (ClassNotFoundException classNotFound) {
-            System.out.println("Error clase no encontrada");
-        }catch (SQLException sqlException) {
-            System.out.println("Error de Conexion a DB");
-        }catch (Exception e) {
-            System.out.println("Error Padre" + e.getMessage());
+    private ConexionDB() {
+    }
+
+    public static ConexionDB getInstancia() {
+        if (instancia == null) {
+            instancia = new ConexionDB();
         }
+        return instancia;
     }
 
-    public static ConexionDB getIntanciaConexionDB() {
-        if (instanciaConexionDB == null) {
-            instanciaConexionDB = new ConexionDB();
-        }
-
-        return instanciaConexionDB;
+    public Connection getConexion() throws SQLException {
+        String url = "jdbc:mysql://" + Enviroment.LOCATION_SERVICE + "/" + Enviroment.DATA_BASE
+                + "?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC";
+        return DriverManager.getConnection(url, Enviroment.USER, Enviroment.PASSWORD);
     }
-
-//Getters y Settrers    
-    
-    public static ConexionDB getInstanciaConexionDB() {
-        return instanciaConexionDB;
-    }
-
-    public static void setInstanciaConexionDB(ConexionDB instanciaConexionDB) {
-        ConexionDB.instanciaConexionDB = instanciaConexionDB;
-    }
-
-    public Connection getConnection() {
-        return connection;
-    }
-
-    public void setConnection(Connection connection) {
-        this.connection = connection;
-    }
-    
-    
-    
-    
 }
